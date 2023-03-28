@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="project_1\images\4.JPG">
+
+</head>
+
+<style>
+    @font-face {
+        font-family: 'Dovemayo_gothic';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    * {
+        margin: 0px;
+        padding:0;
+        box-sizing:border-box;}
+        ul, li {list-style:none;}
+    
+    .Main1 {
+        font-family: 'Dovemayo_gothic';
+        position: absolute;
+        left: 350px;
+        top: 50px;
+        font-size: 20px;
+    }
+
+    .Main2 {
+        font-family: 'Dovemayo_gothic';
+        position: absolute;
+        left: 470px;
+        top: 50px;
+        font-size: 20px;
+    }
+
+    .Main3 {
+        font-family: 'Dovemayo_gothic';
+        position: absolute;
+        left: 610px;
+        top: 50px;
+        font-size: 20px;
+    }
+
+    .Main4 {
+        font-family: 'Dovemayo_gothic';
+        position: absolute;
+        left: 720px;
+        top: 50px;
+        font-size: 20px;
+    }
+
+    .Main5 {
+        font-family: 'Dovemayo_gothic';
+        position: absolute;
+        left: 830px;
+        top: 50px;
+        font-size: 20px;
+    }
+
+    .Main6 {
+        font-family: 'Dovemayo_gothic';
+        position: absolute;
+        left: 50px;
+        top: 700px;
+        font-size: 35px;
+    }
+
+    img.discount_1 {
+        position: relative;
+        left: 110px;
+        top: 87px;
+    }
+
+    img.discount_2 {
+        position: relative;
+        left: 150px;
+        top: 86px;
+    }
+
+    img.discount_3 {
+        position: relative;
+        left: 185px;
+        top: 85px;
+    }
+
+    .Main7 {
+        font-family: 'Dovemayo_gothic';
+        position: absolute;
+        left: 50px;
+        top: 1250px;
+        font-size: 35px;
+    }
+
+    img.new_1 {
+        position: relative;
+        left: 110px;
+        top: 215px;
+    }
+
+    img.new_2 {
+        position: relative;
+        left: 150px;
+        top: 210px;
+    }
+
+    img.new_3 {
+        position: relative;
+        left: 210px;
+        top: 210px;
+    }
+
+    .Main8 {
+        font-family: 'Dovemayo_gothic';
+        position: absolute;
+        left: 50px;
+        top: 1780px;
+        font-size: 35px;
+    }
+
+    div, ul, li {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding:0;margin:0}
+a {text-decoration:none;}
+
+.quickmenu {position:absolute;width:90px;top:50%;margin-top:-50px;right:10px;background:#fff;}
+.quickmenu ul {position:relative;float:left;width:100%;display:inline-block;*display:inline;border:1px solid #ddd;}
+.quickmenu ul li {float:left;width:100%;border-bottom:1px solid #ddd;text-align:center;display:inline-block;*display:inline;}
+.quickmenu ul li a {position:relative;float:left;width:100%;height:30px;line-height:30px;text-align:center;color:#999;font-size:9.5pt;}
+.quickmenu ul li a:hover {color:#000;}
+.quickmenu ul li:last-child {border-bottom:0;}
+
+.content {position:relative;min-height:1000px;}
+
+    .slidebox {
+        max-width: 700px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .slidebox .slidelist {
+        position: relative;
+        white-space: nowrap;
+        font-size: 0;
+        overflow: hidden;
+    }
+
+    .slidebox .slidelist .slideitem {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #fff;
+        width: 100%;
+        transition: all 1s;
+    }
+
+    .slidebox .slidelist .slideitem>a {
+        display: block;
+        width: auto;
+        position: relative;
+    }
+
+    .slidebox .slidelist .slideitem>a img {
+        max-width: 100%;
+    }
+
+    .slidebox .slide-control [class*="control"] label {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .slidebox .slide-control [class*="control"] label.prev {
+        left: -50px;
+        background: #333 url("/project_1/images/left-arrow.png") center center / 50% no-repeat;
+    }
+
+    .slidebox .slide-control [class*="control"] label.next {
+        right: -50px;
+        background: #333 url("/project_1/images/right-arrow.png") center center / 50% no-repeat;
+    }
+
+    [name="slide"] {
+        display: none;
+    }
+
+    #slide01:checked~.slidelist .slideitem {
+        left: 0;
+    }
+
+    #slide02:checked~.slidelist .slideitem {
+        left: -100%;
+    }
+
+    #slide03:checked~.slidelist .slideitem {
+        left: -200%;
+    }
+
+    #slide04:checked~.slidelist .slideitem {
+        left: -300%;
+    }
+
+    .slide-control [class*="control"] {
+        display: none;
+    }
+
+    #slide01:checked~.slide-control .control01 {
+        display: block;
+    }
+
+    #slide02:checked~.slide-control .control02 {
+        display: block;
+    }
+
+    #slide03:checked~.slide-control .control03 {
+        display: block;
+    }
+
+    #slide04:checked~.slide-control .control04 {
+        display: block;
+    }
+
+    @media screen and (max-width: 1074px){
+        .map iframe{
+            width: 300px;
+            height:300px;
+        }
+    }
+
+    #inf {
+        position: relative;
+        left: 140px;
+        top: 400px;
+    }
+
+</style>
+
+<body>
+
+    <img src="project_1\images\Main_1.JPG" alt="로고" style="width : 200px; 
+    height: 80px; margin : 30px">
+
+    <div class="Main1">추천메뉴</div>
+    <div class="Main2">가까운 매장</div>
+    <div class="Main3">서비스</div>
+    <div class="Main4">이벤트</div>
+    <div class="Main5">고객센터</div>
+
+<div class="quickmenu">
+    <ul>
+        <li><a href="#">등급별혜택</a></li>
+        <li><a href="#">1:1문의</a></li>
+        <li><a href="#">후기</a></li>
+    </ul>
+</div>
+
+<div class="slidebox">
+    <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02">
+        <input type="radio" name="slide" id="slide03">
+        <input type="radio" name="slide" id="slide04">
+        <ul class="slidelist">
+            <li class="slideitem">
+                <a><img src="project_1\images\달식당_1.JPG"></a>
+            </li>
+            <li class="slideitem">
+                <a><img src="project_1\images\봉평옹심이_1.JPG"></a>
+            </li>
+            <li class="slideitem">
+                <a><img src="project_1\images\콩나물_1.JPG"></a>
+            </li>
+            <li class="slideitem">
+                <a><img src="project_1\images\동천홍_1.JPG"></a>
+            </li>
+
+        </ul>
+        <div class="slide-control">
+            <div class="control01">
+                <label for="slide04" class="prev"></label>
+                <label for="slide02" class="next"></label>
+            </div>
+            <div class="control02">
+                <label for="slide01" class="prev"></label>
+                <label for="slide03" class="next"></label>
+            </div>
+            <div class="control03">
+                <label for="slide02" class="prev"></label>
+                <label for="slide04" class="next"></label>
+            </div>
+            <div class="control04">
+                <label for="slide03" class="prev"></label>
+                <label for="slide01" class="next"></label>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+    <h1 class="Main6">이번달 행사 매장</h1>
+    <img src="./project_1/images/할인_1.JPG" class="discount_1">
+    <img src="./project_1/images/할인_2.jpg" class="discount_2">
+    <img src="./project_1/images/할인_3.jpg" class="discount_3">
+
+    <br><br><br>
+    <h1 class="Main7">이번달 신규 매장</h1>
+    <img src="./project_1/images/신규_1.JPG" class="new_1">
+    <img src="./project_1/images/신규_2.JPG" class="new_2">
+    <img src="./project_1/images/신규_3.JPG" class="new_3">
+
+    <h1 class="Main8">내 주변 매장</h1>
+    <div class="map" id="inf">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.468328480388!2d127.14497241552496!3d36.80729597499941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b2863c5bb6bb5%3A0x1bc123fe0c4b4510!2z7Zy066i86rWQ7Jyh7IS87YSw!5e0!3m2!1sko!2skr!4v1679991156294!5m2!1sko!2skr" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></>" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <br><br><br><br><br>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            var currentPosition = parseInt($(".quickmenu").css("top"));
+            $(window).scroll(function () {
+                var position = $(window).scrollTop();
+                $(".quickmenu").stop().animate({ "top": position + currentPosition + "px" }, 1000);
+            });
+        });
+    </script>
+    
+    </body>
+    
+    </html>
