@@ -107,7 +107,7 @@
 
 .discount_3 {
     position: relative;
-    left: 185px;
+    left: 200px;
     top: 82px;
 }
 
@@ -133,7 +133,7 @@
 
 .new_3 {
     position: relative;
-    left: 220px;
+    left: 230px;
     top: 205px;
 }
 
@@ -201,12 +201,12 @@ a {text-decoration:none;}
 
 .slidebox .slide-control [class*="control"] label.prev {
     left: -50px;
-    background: #333 url("/project_1/images/left-arrow.png") center center / 50% no-repeat;
+    background: #333 url("images/left-arrow.png") center center / 50% no-repeat;
 }
 
 .slidebox .slide-control [class*="control"] label.next {
     right: -50px;
-    background: #333 url("/project_1/images/right-arrow.png") center center / 50% no-repeat;
+    background: #333 url("images/right-arrow.png") center center / 50% no-repeat;
 }
 
 [name="slide"] {
