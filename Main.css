@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'Dovemayo_gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding:0;
+    box-sizing:border-box;}
+    ul, li {list-style:none;}
+
+
+.button_1 {
+    position: relative;
+    top: -55px;
+    left: 670px;
+}
+
+.Main1 {
+    font-family: 'Dovemayo_gothic';
+    position: absolute;
+    left: 310px;
+    top: 50px;
+    font-size: 20px;
+}
+
+.Main2 {
+    font-family: 'Dovemayo_gothic';
+    position: absolute;
+    left: 425px;
+    top: 50px;
+    font-size: 20px;
+}
+
+.Main3 {
+    font-family: 'Dovemayo_gothic';
+    position: absolute;
+    left: 565px;
+    top: 50px;
+    font-size: 20px;
+}
+
+.Main4 {
+    font-family: 'Dovemayo_gothic';
+    position: absolute;
+    left: 690px;
+    top: 50px;
+    font-size: 20px;
+}
+
+.Main5 {
+    font-family: 'Dovemayo_gothic';
+    position: absolute;
+    left: 790px;
+    top: 50px;
+    font-size: 20px;
+}
+
+.Main6 {
+    font-family: 'Dovemayo_gothic';
+    position: absolute;
+    left: 50px;
+    top: 700px;
+    font-size: 35px;
+}
+
+.discount_1 {
+    position: relative;
+    left: 110px;
+    top: 87px;
+}
+
+.discount_2 {
+    position: relative;
+    left: 150px;
+    top: 80px;
+}
+
+.discount_3 {
+    position: relative;
+    left: 185px;
+    top: 82px;
+}
+
+.Main7 {
+    font-family: 'Dovemayo_gothic';
+    position: absolute;
+    left: 50px;
+    top: 1250px;
+    font-size: 35px;
+}
+
+.new_1 {
+    position: relative;
+    left: 120px;
+    top: 209px;
+}
+
+.new_2 {
+    position: relative;
+    left: 175px;
+    top: 210px;
+}
+
+.new_3 {
+    position: relative;
+    left: 220px;
+    top: 205px;
+}
+
+.Main8 {
+    font-family: 'Dovemayo_gothic';
+    position: absolute;
+    left: 50px;
+    top: 1780px;
+    font-size: 35px;
+}
+
+div, ul, li {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding:0;margin:0}
+a {text-decoration:none;}
+
+.quickmenu {position:absolute;width:90px;top:50%;margin-top:-50px;right:10px;background:#fff;}
+.quickmenu ul {position:relative;float:left;width:100%;display:inline-block;*display:inline;border:1px solid #ddd;}
+.quickmenu ul li {float:left;width:100%;border-bottom:1px solid #ddd;text-align:center;display:inline-block;*display:inline;}
+.quickmenu ul li a {position:relative;float:left;width:100%;height:30px;line-height:30px;text-align:center;color:#999;font-size:9.5pt;}
+.quickmenu ul li a:hover {color:#000;}
+.quickmenu ul li:last-child {border-bottom:0;}
+
+.content {position:relative;min-height:1000px;}
+
+.slidebox {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slidebox .slidelist {
+    position: relative;
+    white-space: nowrap;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.slidebox .slidelist .slideitem {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #fff;
+    width: 100%;
+    transition: all 1s;
+}
+
+.slidebox .slidelist .slideitem>a {
+    display: block;
+    width: auto;
+    position: relative;
+}
+
+.slidebox .slidelist .slideitem>a img {
+    max-width: 100%;
+}
+
+.slidebox .slide-control [class*="control"] label {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slidebox .slide-control [class*="control"] label.prev {
+    left: -50px;
+    background: #333 url("/project_1/images/left-arrow.png") center center / 50% no-repeat;
+}
+
+.slidebox .slide-control [class*="control"] label.next {
+    right: -50px;
+    background: #333 url("/project_1/images/right-arrow.png") center center / 50% no-repeat;
+}
+
+[name="slide"] {
+    display: none;
+}
+
+#slide01:checked~.slidelist .slideitem {
+    left: 0;
+}
+
+#slide02:checked~.slidelist .slideitem {
+    left: -100%;
+}
+
+#slide03:checked~.slidelist .slideitem {
+    left: -200%;
+}
+
+#slide04:checked~.slidelist .slideitem {
+    left: -300%;
+}
+
+.slide-control [class*="control"] {
+    display: none;
+}
+
+#slide01:checked~.slide-control .control01 {
+    display: block;
+}
+
+#slide02:checked~.slide-control .control02 {
+    display: block;
+}
+
+#slide03:checked~.slide-control .control03 {
+    display: block;
+}
+
+#slide04:checked~.slide-control .control04 {
+    display: block;
+}
+
+@media screen and (max-width: 1074px){
+    .map iframe{
+        width: 300px;
+        height:300px;
+    }
+}
+
+#inf {
+    position: relative;
+    left: 140px;
+    top: 400px;
+}
