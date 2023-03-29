@@ -7,9 +7,19 @@
     <title>여기어때유</title>
     <link rel="shortcut icon" type="image/x-icon" href="images\4.JPG">
     <link rel="stylesheet" href="../project_1/Main.css">
+    
 </head>
 
 <body>
+
+<div class="container">
+    <div class="layer-popup show" id="layer-popup">
+        <div class="modal-dialog">
+            <input type="image" img src="images\popup_1.JPG" alt="pop_up">
+        </div>
+    </div>
+</div>
+
     <input type="image" img src="images\Main_1.JPG" alt="로고" onclick="location.href='Main.html'" style="width : 200px; 
     height: 80px; margin : 30px">
 
@@ -25,9 +35,9 @@
 
 <div class="quickmenu">
     <ul>
-        <li><a href="#">등급별혜택</a></li>
-        <li><a href="#">1:1문의</a></li>
-        <li><a href="#">후기</a></li>
+        <li><a href="#">예약 확인</a></li>
+        <li><a href="#">실시간 문의</a></li>
+        <li><a href="#">리뷰 작성</a></li>
     </ul>
 </div>
 
@@ -91,6 +101,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script>
         $(document).ready(function () {
             var currentPosition = parseInt($(".quickmenu").css("top"));
@@ -100,7 +111,16 @@
             });
         });
     </script>
-    
+
+<script>
+$(document).mouseup(function (e){
+    var LayerPopup = $(".layer-popup");
+    if(LayerPopup.has(e.target).length === 0){
+    LayerPopup.removeClass("show");
+    }
+});
+</script>
+
     </body>
     
     </html>
