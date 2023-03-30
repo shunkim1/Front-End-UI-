@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>여기어때유_회원가입</title>
     <link rel="shortcut icon" type="image/x-icon" href="images\icon_1.JPG">
+    <link rel="stylesheet" href="Main.css">
 </head>
 
 <style>
@@ -29,20 +30,22 @@
         font-family: 'Roboto', sans-serif;
     }
 
-    .login-wrapper {
-        width: 500px;
+    .signup-wrapper {
+        width: 400px;
         height: 350px;
-        padding: 40px;
+        position: absolute;
+        left: 400px;
+        top: 200px;
         box-sizing: border-box;
     }
 
-    .login-wrapper>h2 {
+    .signup-wrapper>h2 {
         font-size: 24px;
         color: black;
         margin-bottom: 20px;
     }
 
-    #login-form>input {
+    #signup-form>input {
         width: 100%;
         height: 48px;
         padding: 0 10px;
@@ -52,42 +55,54 @@
         background-color: white;
     }
 
-    #login-form>input::placeholder {
+    #signup-form>input::placeholder {
         color: gray;
     }
 
-    #login-form>input[type="submit"] {
+    #signup-form>input[type="submit"] {
         color: black;
         font-size: 22px;
         background-color: yellow;
         margin-top: 20px;
     }
 
-    #login-form>input[type="checkbox"] {
+    #signup-form>input[type="checkbox"] {
         display: none;
     }
 
-    #login-form>label {
+    #signup-form>label {
         color: gray;
     }
 
-    #login-form input[type="checkbox"]+label {
+    #signup-form input[type="checkbox"]+label {
         cursor: pointer;
         padding-left: 26px;
         background-repeat: no-repeat;
         background-size: contain;
     }
 
-    #login-form input[type="checkbox"]:checked+label {
+    #signup-form input[type="checkbox"]:checked+label {
         background-repeat: no-repeat;
         background-size: contain;
     }
 </style>
 
 <body>
-    <div class="login-wrapper">
+    <input type="image" img src="images\Main_1.JPG" alt="로고" onclick="location.href='Main.html'" style="width : 200px; 
+    height: 80px; margin : 30px">
+
+    <div class="Main1">추천메뉴</div>
+    <div class="Main2">가까운 매장</div>
+    <div class="Main3">매장 예약</div>
+    <div class="Main4">이벤트</div>
+    <div class="Main5">고객센터</div>
+
+    <input type="image" src="images\로그인_1.JPG" onclick="location.href='Login.html'" value="로그인" class="button_1" style="width: 100px; height: 45px;">
+    <input type="image" src="images\회원가입_1.JPG" onclick="location.href='Sign up.html'" value="회원가입" class="button_1" style="width: 100px; height: 45px;">
+
+    <div class="signup-wrapper">
         <h2>회원가입</h2>
-        <form method="post" action="Main.html" id="login-form">
+        <form method="post" action="Main.html" id="signup-form">
             <input type="text" name="userName" placeholder="아이디 입력 *">
             <br>
             <input type="password" name="userPassword" placeholder="비밀번호 입력 *">
@@ -100,7 +115,7 @@
             <div class="field birth">
                 <b>생년월일</b>
                 <div>
-                    <input type="text" placeholder="출생년도" style="width: 80px; height: 45px;">                
+                    <input type="text" placeholder="출생년도 *" style="width: 80px; height: 45px;">                
                     <select>
                         <option value="">월</option>
                         <option value="">1월</option>
