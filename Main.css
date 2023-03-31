@@ -168,6 +168,7 @@ a {text-decoration:none;}
     white-space: nowrap;
     font-size: 0;
     overflow: hidden;
+    border-radius: 30px;
 }
 
 .slidebox .slidelist .slideitem {
