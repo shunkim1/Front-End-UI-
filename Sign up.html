@@ -88,8 +88,7 @@
 </style>
 
 <body>
-    <input type="image" img src="images\Main_1.JPG" alt="로고" onclick="location.href='Main.html'" style="width : 200px; 
-    height: 80px; margin : 30px">
+    <input type="image" img src="images\Main_1.JPG" alt="로고" onclick="location.href='Main.html'" style="width : 200px; height: 80px; margin : 30px;">
 
     <div class="Main1">추천메뉴</div>
     <div class="Main2">가까운 매장</div>
@@ -99,6 +98,10 @@
 
     <input type="image" src="images\로그인_1.JPG" onclick="location.href='Login.html'" value="로그인" class="button_1" style="width: 40px; height: 35px;">
     <input type="image" src="images\회원가입_1.JPG" onclick="location.href='Sign up.html'" value="회원가입" class="button_1" style="width: 40px; height: 35px;">
+
+    <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+    <source src="images\MainMp4.mp4">
+    </video>
 
     <div class="signup-wrapper">
         <h2>회원가입</h2>
@@ -115,7 +118,7 @@
             <div class="field birth">
                 <b>생년월일</b>
                 <div>
-                    <input type="text" placeholder="출생년도 *" style="width: 80px; height: 45px;">                
+                    <input type="text" placeholder="   출생년도 *" style="width: 130px; height: 45px; border-radius: 6px;">                
                     <select>
                         <option value="">월</option>
                         <option value="">1월</option>
